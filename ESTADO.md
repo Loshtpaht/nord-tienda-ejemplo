@@ -2,8 +2,8 @@
 
 Actualizado el 11 de octubre de 2026. **La tienda completa todavía no tiene una URL pública verificada.**
 
-- Demo estática de GitHub Pages: https://loshtpaht.github.io/nord-tienda-ejemplo/ . El contenido remoto debe sincronizarse con esta revisión antes de considerarlo actualizado.
-- Repositorio público: https://github.com/Loshtpaht/nord-tienda-ejemplo . Incluye una copia ZIP del proyecto, también pendiente de sincronización con esta revisión.
+- Demo estática de GitHub Pages: https://loshtpaht.github.io/nord-tienda-ejemplo/ . Se actualizó el código fuente; la publicación de Pages debe verificarse por HTTP tras finalizar su acción.
+- Repositorio público: https://github.com/Loshtpaht/nord-tienda-ejemplo . El commit `a708e2b` incluye la copia ZIP, HTML y auditorías de esta revisión.
 - Copia HTML autónoma local: `outputs/nord-copia.html`.
 - Aplicación completa local: http://127.0.0.1:8787/ y panel http://127.0.0.1:8787/admin, únicamente mientras el servidor de esta computadora esté activo.
 
@@ -13,7 +13,7 @@ GitHub Pages y el HTML permiten explorar el catálogo y el carrito; no registran
 
 El despliegue anterior en Sites falló al migrar D1 con `incomplete input: SQLITE_ERROR`. La consulta remota todavía no devuelve bindings ni tablas, de modo que no se puede saber qué parte de las migraciones se aplicó. **No se modificaron las migraciones 0000–0002** ni se reintentó a ciegas. La migración 0003 agrega dos índices y es nueva. Identificadores: Site `appgprj_6acbcb03f2608191a78d9efd2801c769`, despliegue fallido `appgdep_6acbe38f60d0819196a70782b7ddfb09`.
 
-Vercel Hobby no ejecuta directamente los bindings D1 y R2 de esta aplicación ni su autenticación de alojamiento Sites. Una publicación allí exige migrar almacenamiento y adaptar la identidad confiable, preservando transacciones de inventario. No se hará pasar el frontend estático por solución. No hay base y almacén compatibles configurados ni despliegue HTTPS completo probado. Antes de escoger alojamiento definitivo también hay que comprobar términos y límites aplicables a esta demo sin ventas reales.
+La [documentación oficial de Vercel Hobby](https://vercel.com/docs/plans/hobby) limita el plan al uso personal no comercial. Una prueba privada sin ventas ni cobros reales podría entrar en ese uso, pero el proyecto pensado para venderse requiere otro plan al iniciar actividad comercial. Vercel no ejecuta directamente los bindings D1 y R2 de esta aplicación ni su autenticación de alojamiento Sites. Una publicación allí exige migrar almacenamiento y adaptar la identidad confiable, preservando transacciones de inventario. No se hará pasar el frontend estático por solución. No hay base y almacén compatibles configurados ni despliegue HTTPS completo probado.
 
 El correo se usa **solo para códigos temporales de acceso**: `magustin2007@gmail.com` como administrador y `agustinlunamarcos@gmail.com` como cuenta de inventario; el administrador puede otorgar aparte permiso de pedidos. No se generan correos automáticos por pedido ni al cliente ni a la tienda. El administrador o gestor de pedidos ve correo y teléfono/WhatsApp del cliente y lo contacta manualmente. Para OTP real faltan una cuenta y credenciales de Mailgun sandbox con destinatarios autorizados, o dominio/remitente verificado en Resend. No se ha probado llegada a ninguna bandeja.
 
