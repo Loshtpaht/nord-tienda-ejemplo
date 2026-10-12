@@ -2,9 +2,9 @@
 
 Actualizado el 11 de octubre de 2026. **La tienda completa todavía no tiene una URL pública verificada.**
 
-- Demo estática de GitHub Pages: https://loshtpaht.github.io/nord-tienda-ejemplo/ . Se actualizó el código fuente; la publicación de Pages debe verificarse por HTTP tras finalizar su acción.
-- Inventario público de muestra: `https://loshtpaht.github.io/nord-tienda-ejemplo/inventario-demo.html` una vez publicada y verificada esta revisión. Los cambios quedan solo en el navegador de cada visitante; no son existencias reales ni se comparten con la tienda.
-- Repositorio público: https://github.com/Loshtpaht/nord-tienda-ejemplo . El commit `a708e2b` incluye la copia ZIP, HTML y auditorías de esta revisión.
+- Demo estática de GitHub Pages: https://loshtpaht.github.io/nord-tienda-ejemplo/ . Verificada con HTTP 200 y enlace al inventario público.
+- Inventario público de muestra: https://loshtpaht.github.io/nord-tienda-ejemplo/inventario-demo.html . Verificado con HTTP 200 y prueba interactiva en navegador. Los cambios quedan solo en el navegador de cada visitante; no son existencias reales ni se comparten con la tienda.
+- Repositorio público: https://github.com/Loshtpaht/nord-tienda-ejemplo . El commit `1a9ac66` incluye la copia ZIP, HTML y el inventario de muestra.
 - Copia HTML autónoma local: `outputs/nord-copia.html`.
 - Aplicación completa local: http://127.0.0.1:8787/ y panel http://127.0.0.1:8787/admin, únicamente mientras el servidor de esta computadora esté activo.
 
