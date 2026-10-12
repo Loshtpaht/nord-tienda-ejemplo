@@ -2,10 +2,11 @@
 
 Tienda responsive con modo oscuro, catálogo editable, variantes, carrito sin pagos, pedidos con reservas atómicas y panel privado. Ropa, precios, cantidades, contactos y fotografías son ejemplos. No es una oferta comercial real.
 
-## Tres entregables distintos
+## Entregables distintos
 
 - La aplicación React/Vinext funciona con servidor Cloudflare Workers, base D1 y archivos R2. Contiene panel, inventario, auditoría y pedidos. El correo automático se usa únicamente para códigos de entrada al panel cuando se configura un proveedor.
 - `docs/index.html` es la demostración para GitHub Pages. Permite explorar, filtrar y probar el carrito. No recibe pedidos ni datos personales y no autentica administradores.
+- `docs/inventario-demo.html` es un panel público de muestra. Permite buscar, filtrar, ajustar cantidades y precios, crear un producto ficticio y revisar una propuesta de cambio por frase. Guarda esos cambios únicamente en el navegador del visitante; no modifica D1/R2, no solicita cuentas ni recibe pedidos. `../nord-inventario-demo.html` es su copia independiente.
 - `../nord-copia.html` es la copia visual independiente, con fotografías, fuente y políticas incorporadas para abrirla sin conexión. El código fuente completo es este repositorio.
 
 GitHub Pages sirve archivos estáticos: no ejecuta el servidor ni las reservas. Los pedidos formales enlazan a la aplicación completa cuando exista una URL verificada. La vista de Sites se mantiene privada durante la preparación; un permiso de proveedor dentro de la aplicación no cambia por sí solo la audiencia del alojamiento.
@@ -88,4 +89,4 @@ Además se verificaron peticiones HTTP contra D1 local: última unidad con dos p
 
 Se usan transiciones CSS cortas, interacción de fotos y un movimiento sutil de portada, respetando movimiento reducido. No hay videos ni cargos de Scroll World. El brief para una futura exploración se conserva en `docs/scroll-world-brief.md`.
 
-Para regenerar la copia: `node scripts/export-static.mjs`. Cambiar la copia no cambia el inventario guardado de la tienda completa.
+Para regenerar las copias: `node scripts/export-inventory-demo.mjs` y `node scripts/export-static.mjs`. Cambiar esas copias no cambia el inventario guardado de la tienda completa.
